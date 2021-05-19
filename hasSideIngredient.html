@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Recipe Ontology</title>
+        <script src="https://schema.org/docs/prettify.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://schema.org/docs/schemaorg.js"></script>
+        <script src="https://schema.org/docs/sdotermpage.js"></script>
+        <script src="https://schema.org/docs/pretty-markup/schemarama-parsing.bundle.min.js"></script>
+        <script src="https://schema.org/docs/pretty-markup/layout.js"></script>
+        <script src="https://schema.org/docs/clipboard/clipboard.min.js"></script>
+
+        <link rel="shortcut icon" type="image/png" href="./thesis.png" />
+        <link rel="stylesheet" type="text/css" href="./docs/schemaorg.css" />
+        <link rel="stylesheet" type="text/css" href="./docs/devnote.css" />
+        <link rel="stylesheet" type="text/css" href="./docs/prettify.css" />
+        <link rel="stylesheet" type="text/css" href="./docs/sdotermpage.css" />
+        <link rel="stylesheet" type="text/css" href="./docs/pretty-markup/style.css" />
+    </head>
+
+    <body>
+        <!-- Header start from PageHeader.j2 -->
+        <!-- Static Doc Insert PageHead -->
+        <div id="container">
+            <div id="headerwrap">
+                <div id="pagehead1" class="mobnav">
+                    <div class="header-block" id="pagehead-left">
+                        <div id="sitename2"><a href="./index.html">Recipe Ontology</a></div>
+                    </div>
+                    <div class="header-block header-block-right mobnav" id="pagehead-mid">
+                        <div id="selectionbar2">
+                            <ul>
+                                <li><a href="./documents.html">Documentation</a></li>
+                                <li><a href="./about.html">About</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Header end from PageHeader.j2 -->
+
+        <div id="mainContent">
+            <div id="infoblock">
+                <!-- Label /  termType  / canonical URI -->
+                <div id="infohead">
+                    <h1>hasSideIngredient</h1>
+                    <em>An owl:ObjectProperty</em>
+                    <br />
+                    <!-- Pending/retired/term in section -->
+                </div>
+
+                <!-- Description of term -->
+                <div class="description">The side ingredient used in the recipe i.e. Potato.</div>
+            </div>
+            <!-- infoblock -->
+            <table class="definition-table">
+                <thead>
+                    <tr>
+                        <th>Range <em>(Values expected to be one of these types)</em></th>
+                    </tr>
+                </thead>
+                <tr>
+                    <td>
+                        <code>
+                            <a href="./Ingredient.html" class="core" title="Text">Ingredient</a>
+                        </code>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>
+                            <a href="./SideIngredient.html" class="core" title="Text">SideIngredient</a>
+                        </code>
+                    </td>
+                </tr>
+            </table>
+            <table class="definition-table">
+                <thead>
+                    <tr>
+                        <th>Domain <em>(Used on these types)</em></th>
+                    </tr>
+                </thead>
+                <tr>
+                    <td>
+                        <code>
+                            <a href="./index.html" class="core" title="Recipe">Recipe</a>
+                        </code>
+                    </td>
+                </tr>
+            </table>
+            <div id="examplespannel" style="width: auto; overflow-x: auto;"></div>
+        </div>
+    </body>
+</html>

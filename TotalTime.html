@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Recipe Ontology - TotalTime</title>
+        <script src="https://schema.org/docs/prettify.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://schema.org/docs/schemaorg.js"></script>
+        <script src="https://schema.org/docs/sdotermpage.js"></script>
+        <script src="https://schema.org/docs/pretty-markup/schemarama-parsing.bundle.min.js"></script>
+        <script src="https://schema.org/docs/pretty-markup/layout.js"></script>
+        <script src="https://schema.org/docs/clipboard/clipboard.min.js"></script>
+
+        <link rel="shortcut icon" type="image/png" href="./thesis.png" />
+        <link rel="stylesheet" type="text/css" href="./docs/schemaorg.css" />
+        <link rel="stylesheet" type="text/css" href="./docs/devnote.css" />
+        <link rel="stylesheet" type="text/css" href="./docs/prettify.css" />
+        <link rel="stylesheet" type="text/css" href="./docs/sdotermpage.css" />
+        <link rel="stylesheet" type="text/css" href="./docs/pretty-markup/style.css" />
+    </head>
+
+    <body>
+        <!-- Header start from PageHeader.j2 -->
+        <!-- Static Doc Insert PageHead -->
+        <div id="container">
+            <div id="headerwrap">
+                <div id="pagehead1" class="mobnav">
+                    <div class="header-block" id="pagehead-left">
+                        <div id="sitename2"><a href="./index.html">Recipe Ontology</a></div>
+                    </div>
+                    <div class="header-block header-block-right mobnav" id="pagehead-mid">
+                        <div id="selectionbar2">
+                            <ul>
+                                <li><a href="./documents.html">Documentation</a></li>
+                                <li><a href="./about.html">About</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Header end from PageHeader.j2 -->
+ 
+        <div id="mainContent">
+            <div id="infoblock">
+                <!-- Label /  termType  / canonical URI -->
+                <div id="infohead">
+                    <h1>TotalTime</h1>
+                    <em>rdfs:Class Type</em>
+                    <br>
+                    <em>rdfs:subClassOf Type</em> <a href="https://schema.org/Time">Time</a>
+                    <br />
+                    <!-- Pending/retired/term in section -->
+                </div>
+                
+                <!-- Description of term -->
+                <div class="description">A TotalTime. This document contains a list of terms that have been enumerated explicitly. This vocabularies define the concepts and relationships (also referred to as “terms”) used to describe and represent a TotalTime for a recipe.</div>
+            </div>
+            <!-- infoblock -->
+
+            <!-- Show properties (if any) associated with term and its supertypes -->
+            <!-- Properties block for term: GeoCoordinates-->
+
+            <!-- Identify if this term or one of its supertypes has any associated properties -->
+
+            <table class="definition-table">
+                <thead>
+                    <tr>
+                        <th>Property</th>
+                        <th>Expected Type</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <!-- Properties for Term: GeoCoordinates-->
+
+                <tr class="supertype">
+                    <th class="supertype-name" colspan="3">
+                        Object Properties
+                    </th>
+                </tr>
+
+                <tr>
+                    <th class="prop-nam">
+                        <code> <a href="./hasCookTime.html" class="core" title="hasCookTime">hasCookTime</a></code>
+                    </th>
+                    <td class="prop-ect">
+                        <a href="./CookTime.html" class="core" title="Text">CookTime</a>
+                    </td>
+                    <td class="prop-desc">The time it takes to actually cook the dish.</td>
+                </tr>
+
+                <tr>
+                    <th class="prop-nam">
+                        <code> <a href="./hasPrepTime.html" class="core" title="hasPrepTime">hasPrepTime</a></code>
+                    </th>
+                    <td class="prop-ect">
+                        <a href="./PrepTime.html" class="core" title="Text">PrepTime</a>
+                    </td>
+                    <td class="prop-desc">The length of time it takes to prepare the items to be used in instructions or a direction.</td>
+                </tr>            
+            </table>
+
+            <!-- List properties that have this term as an Expected type -->
+
+            <br />
+           
+        <!-- mainContent -->
+        <!-- Footer start from PageFooter.j2 -->
+
+        <div id="footer">
+            <p></p>
+
+        </div>
+
+
+    </body>
+</html>

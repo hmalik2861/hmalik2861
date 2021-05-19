@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Recipe Ontology</title>
+        <script src="https://schema.org/docs/prettify.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://schema.org/docs/schemaorg.js"></script>
+        <script src="https://schema.org/docs/sdotermpage.js"></script>
+        <script src="https://schema.org/docs/pretty-markup/schemarama-parsing.bundle.min.js"></script>
+        <script src="https://schema.org/docs/pretty-markup/layout.js"></script>
+        <script src="https://schema.org/docs/clipboard/clipboard.min.js"></script>
+
+        <link rel="shortcut icon" type="image/png" href="./thesis.png" />
+        <link rel="stylesheet" type="text/css" href="./docs/schemaorg.css" />
+        <link rel="stylesheet" type="text/css" href="./docs/devnote.css" />
+        <link rel="stylesheet" type="text/css" href="./docs/prettify.css" />
+        <link rel="stylesheet" type="text/css" href="./docs/sdotermpage.css" />
+        <link rel="stylesheet" type="text/css" href="./docs/pretty-markup/style.css" />
+    </head>
+
+    <body>
+        <!-- Header start from PageHeader.j2 -->
+        <!-- Static Doc Insert PageHead -->
+        <div id="container">
+            <div id="headerwrap">
+                <div id="pagehead1" class="mobnav">
+                    <div class="header-block" id="pagehead-left">
+                        <div id="sitename2"><a href="./index.html">Recipe Ontology</a></div>
+                    </div>
+                    <div class="header-block header-block-right mobnav" id="pagehead-mid">
+                        <div id="selectionbar2">
+                            <ul>
+                                <li><a href="./documents.html">Documentation</a></li>
+                                <li><a href="./about.html">About</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Header end from PageHeader.j2 -->
+
+        <div id="mainContent">
+            <div id="infoblock">
+                <!-- Label /  termType  / canonical URI -->
+                <div id="infohead">
+                    <h1>Recipe</h1>
+                    <em>rdfs:Class Type</em>
+                    <br />
+                    <!-- Pending/retired/term in section -->
+                </div>
+                <div></div>
+                <!-- Description of term -->
+                <div class="description">
+                    A recipe. This document contains a list of terms that have been enumerated explicitly. This vocabularies define the concepts and relationships (also referred to as “terms”) used to describe and represent a recipe.
+                </div>
+            </div>
+            <!-- infoblock -->
+            <!-- Show properties (if any) associated with term and its supertypes -->
+            <!-- Properties block for term: Recipe-->
+            <!-- Identify if this term or one of its supertypes has any associated properties -->
+            <table class="definition-table">
+                <thead>
+                    <tr>
+                        <th>Property</th>
+                        <th>Expected Type</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <!-- Properties for Term: Recipe-->
+                <tr class="supertype">
+                    <th class="supertype-name" colspan="3">Object Properties</th>
+                </tr>
+                <tr>
+                    <th class="prop-nam">
+                        <code> <a href="./hasTotalTime.html" class="core" title="hasTotalTime">hasTotalTime</a></code>
+                    </th>
+                    <td class="prop-ect"><a href="./TotalTime.html" class="core" title="TotalTime">TotalTime</a></td>
+                    <td class="prop-desc">The total time it takes to follow all the steps. It consists of the cookTime, chillTime & prepTime.</td>
+                </tr>
+                <tr>
+                    <th class="prop-nam">
+                        <code> <a href="./hasMealType.html" class="core" title="hasMealType">hasMealType</a></code>
+                    </th>
+                    <td class="prop-ect"><a href="./MealType.html" class="core" title="Text">MealType</a></td>
+                    <td class="prop-desc">The type of the meal, it can either be Breakfast, Brunch, Lunch, Dinner, or Snack.</td>
+                </tr>
+                <tr>
+                    <th class="prop-nam">
+                        <code> <a href="./hasRecipeType.html" class="core" title="hasRecipeType">hasRecipeType</a></code>
+                    </th>
+                    <td class="prop-ect"><a href="./RecipeType.html" class="core" title="RecipeType">RecipeType</a></td>
+                    <td class="prop-desc">The type of recipe, it can be Appetizer, Dessert, Salads, e.t.c.</td>
+                </tr>
+                <tr>
+                    <th class="prop-nam">
+                        <code> <a href="./hasRecipeCuisine.html" class="core" title="hasRecipeCuisine">hasRecipeCuisine</a></code>
+                    </th>
+                    <td class="prop-ect"><a href="./RecipeCuisine.html" class="core" title="RecipeCuisine">RecipeCuisine</a></td>
+                    <td class="prop-desc">The classification of Recipe, as per Cuisine type. It can be Asian, French, Italian e.t.c.</td>
+                </tr>
+                <tr>
+                    <th class="prop-nam">
+                        <code> <a href="./hasDifficultyLevel.html" class="core" title="hasDifficultyLevel">hasDifficultyLevel</a></code>
+                    </th>
+                    <td class="prop-ect"><a href="./DifficultyLevel.html" class="core" title="DifficultyLevel">DifficultyLevel</a></td>
+                    <td class="prop-desc">The difficulty level of the recipe, It can be easy, medium or hard.</td>
+                </tr>
+                <tr>
+                    <th class="prop-nam">
+                        <code> <a href="./wasDerivedFrom.html" class="core" title="wasDerivedFrom">wasDerivedFrom</a></code>
+                    </th>
+                    <td class="prop-ect"><a href="./Source.html" class="core" title="Source">Source</a></td>
+                    <td class="prop-desc">The source, URL where the recipe the recipe was originally published.</td>
+                </tr>
+                <tr>
+                    <th class="prop-nam">
+                        <code> <a href="./produceQuantityOfFood.html" class="core" title="produceQuantityOfFood">produceQuantityOfFood</a></code>
+                    </th>
+                    <td class="prop-ect"><a href="./QuantityOfFood.html" class="core" title="QuantityOfFood">QuantityOfFood</a></td>
+                    <td class="prop-desc">The quantity produced by the recipe (for example, number of people served, number of servings, etc).</td>
+                </tr>
+                <tr>
+                    <th class="prop-nam">
+                        <code> <a href="./tool.html" class="core" title="tool">tool</a></code>
+                    </th>
+                    <td class="prop-ect"><a href="./CookingEquipment.html" class="core" title="CookingEquipment">CookingEquipment</a></td>
+                    <td class="prop-desc">An object used (but not consumed) when performing instructions or a direction.</td>
+                </tr>
+                <tr>
+                    <th class="prop-nam">
+                        <code> <a href="./cookingMethod.html" class="core" title="cookingMethod">cookingMethod</a></code>
+                    </th>
+                    <td class="prop-ect"><a href="./CookingMethod.html" class="core" title="CookingMethod">CookingMethod</a></td>
+                    <td class="prop-desc">The method of cooking, such as Frying, Steaming, e.t.c.</td>
+                </tr>
+                <tr>
+                    <th class="prop-nam">
+                        <code> <a href="./recipeYield.html" class="core" title="recipeYield">recipeYield</a></code>
+                    </th>
+                    <td class="prop-ect"><a href="./FoodProduct.html" class="core" title="FoodProduct">FoodProduct</a></td>
+                    <td class="prop-desc">The food product yield after the completion of recipe i.e. Cupcakes.</td>
+                </tr>
+                <tr>
+                    <th class="prop-nam">
+                        <code> <a href="./recipeIngredient.html" class="core" title="recipeIngredient">recipeIngredient</a></code>
+                    </th>
+                    <td class="prop-ect"><a href="./Ingredient.html" class="core" title="Ingredient">Ingredient</a></td>
+                    <td class="prop-desc">An Ingredient used in the recipe.</td>
+                </tr>
+                <tr>
+                    <th class="prop-nam">
+                        <code> <a href="./hasMainIngredient.html" class="core" title="hasMainIngredient">hasMainIngredient</a></code>
+                    </th>
+                    <td class="prop-ect">
+                        <a href="./MainIngredient.html" class="core" title="MainIngredient">MainIngredient</a>&nbsp; or <br />
+                        <a href="./Ingredient.html" class="core" title="Ingredient">Ingredient</a>
+                    </td>
+                    <td class="prop-desc">The Main ingredient used in the recipe i.e. Chicken.</td>
+                </tr>
+                <tr>
+                    <th class="prop-nam">
+                        <code> <a href="./hasSideIngredient.html" class="core" title="hasSideIngredient">hasSideIngredient</a></code>
+                    </th>
+                    <td class="prop-ect">
+                        <a href="./SideIngredient.html" class="core" title="SideIngredient">SideIngredient</a>&nbsp; or <br />
+                        <a href="./Ingredient" class="core" title="Ingredient">Ingredient</a>
+                    </td>
+                    <td class="prop-desc">The side ingredient used in the recipe i.e. Potato.</td>
+                </tr>
+                <tr>
+                    <th class="prop-nam">
+                        <code> <a href="./hasRecipeInstruction.html" class="core" title="hasRecipeInstruction">hasRecipeInstruction</a></code>
+                    </th>
+                    <td class="prop-ect"><a href="./Instruction.html" class="core" title="Instruction">Instruction</a></td>
+                    <td class="prop-desc">A step in making the recipe, in the form of a single item (document, video, etc.)</td>
+                </tr>
+
+                <!-- Properties for Term: Schema.org-->
+
+                <tr class="supertype">
+                    <th class="supertype-name" colspan="3">Object Properties from <a href="https://schema.org/" class="core" title="schema.org">schema.org</a></th>
+                </tr>
+                <tr>
+                    <th class="prop-nam">
+                        <code> <a href="https://schema.org/aggregateRating" class="core" title="aggregateRating">aggregateRating</a></code>
+                    </th>
+                    <td class="prop-ect"><a href="https://schema.org/AggregateRating" class="core" title="AggregateRating">AggregateRating</a></td>
+                    <td class="prop-desc">The overall rating, based on a collection of reviews or ratings, of the item.</td>
+                </tr>
+                <tr>
+                    <th class="prop-nam">
+                        <code> <a href="https://schema.org/author" class="core" title="author">author</a></code>
+                    </th>
+                    <td class="prop-ect">
+                        <a href="https://schema.org/Organization" class="core" title="Organization">Organization</a>&nbsp; or <br />
+                        <a href="https://schema.org/Person" class="core" title="Person">Person</a>
+                    </td>
+                    <td class="prop-desc">
+                        The author of this content or rating. Please note that author is special in that HTML 5 provides a special mechanism for indicating authorship via the rel tag. That is equivalent to this and may be used
+                        interchangeably.
+                    </td>
+                </tr>
+
+                <!-- Properties for Term: CreativeWork-->
+                <tr class="supertype">
+                    <th class="supertype-name" colspan="3">Data Properties</th>
+                </tr>
+                <tr>
+                    <th class="prop-nam">
+                        <code> <a href="./hasTitle.html" class="core" title="hasTitle">hasTitle</a></code>
+                    </th>
+                    <td class="prop-ect"><a href="https://schema.org/Text" class="core" title="Text">Text</a></td>
+                    <td class="prop-desc">The Title of the recipe.</td>
+                </tr>
+
+                <!-- Data Properties from schema.org-->
+                <tr class="supertype">
+                    <th class="supertype-name" colspan="3">Data Properties from <a href="https://schema.org/" class="core" title="schema.org">schema.org</a></th>
+                </tr>
+
+                <tr>
+                    <th class="prop-nam">
+                        <code> <a href="https://schema.org/image" class="core" title="image">image</a></code>
+                    </th>
+                    <td class="prop-ect">
+                        <a href="https://schema.org/ImageObject" class="core" title="ImageObject">ImageObject</a>&nbsp; or <br />
+                        <a href="https://schema.org/URL" class="core" title="URL">URL</a>
+                    </td>
+                    <td class="prop-desc">An image of the item. This can be a URL or a fully described ImageObject.</td>
+                </tr>
+            </table>
+            <div>
+                <p></p>
+            </div>
+            <!-- Examples block for term: Recipe-->
+            <div id="examplespannel" style="width: auto; overflow-x: auto;">
+                <b><a id="examples" title="Link: #examples" href="#examples" class="clickableAnchor">Examples</a></b>
+                <br />
+                <br />
+                <div class="example-head">
+                    <a id="eg-0013" title="Link: #eg-0013" href="#eg-0013" class="clickableAnchor">Example 1</a>
+                    <div class="tooltip">
+                        <button class="clip clipbutton eg-0013" data-clipboard-target=".ds-tab.selected.eg-0013 .clipsource" title="Copy example to clipboard"><img src="./icon.png" width="15" alt="Copy to clipboard" /></button>
+                        <span class="tooltiptext eg-0013">Copied</span>
+                    </div>
+                </div>
+                <div class="ds-selector-tabs ds-selector">
+                    <div class="selectors">
+                        <a data-selects="original_html" class="selected">No Markup</a> <a data-selects="microdata" class="">Microdata</a> <a data-selects="rdfa" class="">RDFa</a> <a data-selects="jsonld" class="">JSON-LD</a>
+                        <a data-selects="structure" class="extabs">Structure</a>
+                    </div>
+                    <div class="ds-tab eg-0013 original_html selected">
+                        <div class="ds-tab-note">Example notes or example HTML without markup.</div>
+                        <pre class="ds-tab-content prettyprint lang-html linenums clipsource">
+Hammad&#39;s World Famous Banana Bread
+By John Smith, May 8, 2009
+&lt;img src=&#34;bananabread.jpg&#34; alt=&#34;Banana bread on a plate&#34; /&gt;
+
+This classic banana bread recipe comes from my mom -- the walnuts add a nice
+ texture and flavor to the banana bread.
+
+Prep Time: 15 minutes
+Cook time: 1 hour
+Yield: 1 loaf
+Tags: Low fat
+
+Nutrition facts:
+240 calories, 9 grams fat
+
+Ingredients:
+- 3 or 4 ripe bananas, smashed
+- 1 egg
+- 3/4 cup of sugar
+...
+
+Instructions:
+ Preheat the oven to 350 degrees. Mix in the ingredients in a bowl. Add the
+ flour last. Pour the mixture into a loaf pan and bake for one hour.
+
+140 comments:
+From Janel, May 5 -- thank you, great recipe!
+...
+
+                        </pre>
+                    </div>
+                    <div class="ds-tab eg-0013 microdata">
+                        <div class="ds-tab-note">Example encoded as <a class="ds-tab-note" href="https://en.wikipedia.org/wiki/Microdata_(HTML)">Microdata</a> embedded in HTML.</div>
+                        <pre class="ds-tab-content prettyprint lang-html linenums clipsource">
+&lt;div itemscope itemtype=&#34;https://schema.org/Recipe&#34;&gt;
+  &lt;span itemprop=&#34;name&#34;&gt;Mom&#39;s World Famous Banana Bread&lt;/span&gt;
+  By &lt;span itemprop=&#34;author&#34;&gt;John Smith&lt;/span&gt;,
+  &lt;meta itemprop=&#34;datePublished&#34; content=&#34;2009-05-08&#34;&gt;May 8, 2009
+  &lt;img itemprop=&#34;image&#34; src=&#34;bananabread.jpg&#34;
+       alt=&#34;Banana bread on a plate&#34; /&gt;
+
+  &lt;span itemprop=&#34;description&#34;&gt;This classic banana bread recipe comes
+  from my mom -- the walnuts add a nice texture and flavor to the banana
+  bread.&lt;/span&gt;
+
+  Prep Time: &lt;meta itemprop=&#34;prepTime&#34; content=&#34;PT15M&#34;&gt;15 minutes
+  Cook time: &lt;meta itemprop=&#34;cookTime&#34; content=&#34;PT1H&#34;&gt;1 hour
+  Yield: &lt;span itemprop=&#34;recipeYield&#34;&gt;1 loaf&lt;/span&gt;
+  Tags: &lt;link itemprop=&#34;suitableForDiet&#34; href=&#34;https://schema.org/LowFatDiet&#34; /&gt;Low fat
+
+  &lt;div itemprop=&#34;nutrition&#34;
+    itemscope itemtype=&#34;https://schema.org/NutritionInformation&#34;&gt;
+    Nutrition facts:
+    &lt;span itemprop=&#34;calories&#34;&gt;240 calories&lt;/span&gt;,
+    &lt;span itemprop=&#34;fatContent&#34;&gt;9 grams fat&lt;/span&gt;
+  &lt;/div&gt;
+
+  Ingredients:
+  - &lt;span itemprop=&#34;recipeIngredient&#34;&gt;3 or 4 ripe bananas, smashed&lt;/span&gt;
+  - &lt;span itemprop=&#34;recipeIngredient&#34;&gt;1 egg&lt;/span&gt;
+  - &lt;span itemprop=&#34;recipeIngredient&#34;&gt;3/4 cup of sugar&lt;/span&gt;
+  ...
+
+  Instructions:
+  &lt;span itemprop=&#34;recipeInstructions&#34;&gt;
+  Preheat the oven to 350 degrees. Mix in the ingredients in a bowl. Add
+  the flour last. Pour the mixture into a loaf pan and bake for one hour.
+  &lt;/span&gt;
+
+  140 comments:
+  &lt;div itemprop=&#34;interactionStatistic&#34; itemscope itemtype=&#34;https://schema.org/InteractionCounter&#34;&gt;
+    &lt;meta itemprop=&#34;interactionType&#34; content=&#34;https://schema.org/CommentAction&#34; /&gt;
+    &lt;meta itemprop=&#34;userInteractionCount&#34; content=&#34;140&#34; /&gt;
+  &lt;/div&gt;
+  From Janel, May 5 -- thank you, great recipe!
+  ...
+&lt;/div&gt;
+
+                        </pre>
+                    </div>
+                    <div class="ds-tab eg-0013 rdfa">
+                        <div class="ds-tab-note">Example encoded as <a class="ds-tab-note" href="https://en.wikipedia.org/wiki/RDFa">RDFa</a> embedded in HTML.</div>
+                        <pre class="ds-tab-content prettyprint lang-html linenums clipsource">
+&lt;div vocab=&#34;https://schema.org/&#34; typeof=&#34;Recipe&#34;&gt;
+  &lt;span property=&#34;name&#34;&gt;Mom&#39;s World Famous Banana Bread&lt;/span&gt;
+  By &lt;span property=&#34;author&#34;&gt;John Smith&lt;/span&gt;,
+  &lt;meta property=&#34;datePublished&#34; content=&#34;2009-05-08&#34;&gt;May 8, 2009
+  &lt;img property=&#34;image&#34; src=&#34;bananabread.jpg&#34;
+    alt=&#34;Banana bread on a plate&#34; /&gt;
+
+  &lt;span property=&#34;description&#34;&gt;This classic banana bread recipe comes
+  from my mom -- the walnuts add a nice texture and flavor to the banana
+  bread.&lt;/span&gt;
+
+  Prep Time: &lt;meta property=&#34;prepTime&#34; content=&#34;PT15M&#34;&gt;15 minutes
+  Cook time: &lt;meta property=&#34;cookTime&#34; content=&#34;PT1H&#34;&gt;1 hour
+  Yield: &lt;span property=&#34;recipeYield&#34;&gt;1 loaf&lt;/span&gt;
+  Tags: &lt;link property=&#34;suitableForDiet&#34; href=&#34;https://schema.org/LowFatDiet&#34; /&gt;Low Fat
+
+  &lt;div property=&#34;nutrition&#34; typeof=&#34;NutritionInformation&#34;&gt;
+    Nutrition facts:
+    &lt;span property=&#34;calories&#34;&gt;240 calories&lt;/span&gt;,
+    &lt;span property=&#34;fatContent&#34;&gt;9 grams fat&lt;/span&gt;
+  &lt;/div&gt;
+
+  Ingredients:
+  - &lt;span property=&#34;recipeIngredient&#34;&gt;3 or 4 ripe bananas, smashed&lt;/span&gt;
+  - &lt;span property=&#34;recipeIngredient&#34;&gt;1 egg&lt;/span&gt;
+  - &lt;span property=&#34;recipeIngredient&#34;&gt;3/4 cup of sugar&lt;/span&gt;
+  ...
+
+  Instructions:
+  &lt;span property=&#34;recipeInstructions&#34;&gt;
+  Preheat the oven to 350 degrees. Mix in the ingredients in a bowl. Add
+  the flour last. Pour the mixture into a loaf pan and bake for one hour.
+  &lt;/span&gt;
+
+  140 comments:
+  &lt;div property=&#34;interactionStatistic&#34; typeof=&#34;InteractionCounter&#34;&gt;
+    &lt;meta property=&#34;interactionType&#34; content=&#34;https://schema.org/CommentAction&#34; /&gt;
+    &lt;meta property=&#34;userInteractionCount&#34; content=&#34;140&#34; /&gt;
+  &lt;/div&gt;
+  From Janel, May 5 -- thank you, great recipe!
+  ...
+&lt;/div&gt;
+
+                        </pre>
+                    </div>
+                    <div class="ds-tab eg-0013 jsonld">
+                        <div class="ds-tab-note">Example encoded as <a class="ds-tab-note" href="https://en.wikipedia.org/wiki/JSON-LD">JSON-LD</a> in a HTML script tag.</div>
+                        <pre class="ds-tab-content prettyprint lang-html linenums clipsource">
+&lt;script type=&#34;application/ld+json&#34;&gt;
+{
+  &#34;@context&#34;: &#34;https://schema.org&#34;,
+  &#34;@type&#34;: &#34;Recipe&#34;,
+  &#34;author&#34;: &#34;John Smith&#34;,
+  &#34;cookTime&#34;: &#34;PT1H&#34;,
+  &#34;datePublished&#34;: &#34;2009-05-08&#34;,
+  &#34;description&#34;: &#34;This classic banana bread recipe comes from my mom -- the walnuts add a nice texture and flavor to the banana bread.&#34;,
+  &#34;image&#34;: &#34;bananabread.jpg&#34;,
+  &#34;recipeIngredient&#34;: [
+    &#34;3 or 4 ripe bananas, smashed&#34;,
+    &#34;1 egg&#34;,
+    &#34;3/4 cup of sugar&#34;
+  ],
+  &#34;interactionStatistic&#34;: {
+    &#34;@type&#34;: &#34;InteractionCounter&#34;,
+    &#34;interactionType&#34;: &#34;https://schema.org/Comment&#34;,
+    &#34;userInteractionCount&#34;: &#34;140&#34;
+  },
+  &#34;name&#34;: &#34;Mom&#39;s World Famous Banana Bread&#34;,
+  &#34;nutrition&#34;: {
+    &#34;@type&#34;: &#34;NutritionInformation&#34;,
+    &#34;calories&#34;: &#34;240 calories&#34;,
+    &#34;fatContent&#34;: &#34;9 grams fat&#34;
+  },
+  &#34;prepTime&#34;: &#34;PT15M&#34;,
+  &#34;recipeInstructions&#34;: &#34;Preheat the oven to 350 degrees. Mix in the ingredients in a bowl. Add the flour last. Pour the mixture into a loaf pan and bake for one hour.&#34;,
+  &#34;recipeYield&#34;: &#34;1 loaf&#34;,
+  &#34;suitableForDiet&#34;: &#34;https://schema.org/LowFatDiet&#34;
+}
+&lt;/script&gt;
+
+                        </pre>
+                    </div>
+                    <div class="ds-tab eg-0013 structure extabs" data-ex="eg-0013">
+                        <div class="ds-tab-note">Structured representation of the JSON-LD example.</div>
+                        <div class="ds-tab-content structureout extabs eg-0013" style="margin-left: 5px;"></div>
+                        <div class="structuretext clipsource extabs eg-0013"></div>
+                    </div>
+                    <div class="payload eg-0013" style="display: none;">
+                        { &#34;@context&#34;: &#34;https://schema.org&#34;, &#34;@type&#34;: &#34;Recipe&#34;, &#34;author&#34;: &#34;John Smith&#34;, &#34;cookTime&#34;: &#34;PT1H&#34;, &#34;datePublished&#34;: &#34;2009-05-08&#34;,
+                        &#34;description&#34;: &#34;This classic banana bread recipe comes from my mom -- the walnuts add a nice texture and flavor to the banana bread.&#34;, &#34;image&#34;: &#34;bananabread.jpg&#34;,
+                        &#34;recipeIngredient&#34;: [ &#34;3 or 4 ripe bananas, smashed&#34;, &#34;1 egg&#34;, &#34;3/4 cup of sugar&#34; ], &#34;interactionStatistic&#34;: { &#34;@type&#34;: &#34;InteractionCounter&#34;,
+                        &#34;interactionType&#34;: &#34;https://schema.org/Comment&#34;, &#34;userInteractionCount&#34;: &#34;140&#34; }, &#34;name&#34;: &#34;Mom&#39;s World Famous Banana Bread&#34;, &#34;nutrition&#34;: { &#34;@type&#34;:
+                        &#34;NutritionInformation&#34;, &#34;calories&#34;: &#34;240 calories&#34;, &#34;fatContent&#34;: &#34;9 grams fat&#34; }, &#34;prepTime&#34;: &#34;PT15M&#34;, &#34;recipeInstructions&#34;: &#34;Preheat the oven to
+                        350 degrees. Mix in the ingredients in a bowl. Add the flour last. Pour the mixture into a loaf pan and bake for one hour.&#34;, &#34;recipeYield&#34;: &#34;1 loaf&#34;, &#34;suitableForDiet&#34;:
+                        &#34;https://schema.org/LowFatDiet&#34; }
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- mainContent -->
+        <!-- Footer start from PageFooter.j2 -->
+        <div id="footer">
+            <p></p>
+        </div>
+        <!-- Footer end from PageFooter.j2 -->
+    </body>
+</html>
